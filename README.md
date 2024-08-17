@@ -20,7 +20,7 @@ Configure MongoDB:
 Create a .env file in the root directory.
 Add your MongoDB URI:
 ```shell
-MONGO_URI=mongodb+srv://<username>:<password>@cluster0.mongodb.net/yourdbname?retryWrites=true&w=majority
+CONNECTION_URL=mongodb+srv://<username>:<password>@cluster0.mongodb.net/yourdbname?retryWrites=true&w=majority
 ```
 Start the backend server:
 ```shell
