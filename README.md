@@ -1,10 +1,11 @@
-1. Project Overview<br />
+
 Title: App Launcher<br />
 Description: A backend application designed to launch applications with specific parameters through a RESTful API. It is built using Node.js, Express.js, and MongoDB.<br />
-2. Installation Instructions<br />
-Prerequisites:<br />
+Installation Instructions<br />
+> **Note**:Prerequisites:<br />
 Node.js and npm installed.<br />
 MongoDB server - a MongoDB Atlas account.<br />
+
 Backend Setup:<br />
 Clone the repository:
 ```shell
@@ -25,7 +26,7 @@ Start the backend server:
 ```shell
 node index.js
 ```
-3. Usage
+
 API Endpoints:
 POST /launcher: Launches an application with the specified path and command.
 Body Parameters:
@@ -42,9 +43,10 @@ Set the URL to
 http://localhost:5000/launcher.
 ```
 Use the POST method and the JSON body format as described above.<br />
-5. Features Implementation<br />
+
+Features Implementation<br />
 Launcher API:
-Implemented a REST API that accepts POST requests to launch applications.
-Utilized child_process to execute commands in the OS.<br />
+Implemented a REST API that accepts POST requests to launch applications.<br />
+Utilized 'child_process' to execute commands in the OS.<br />
 MongoDB Integration:
 Stored and retrieved application details using Mongoose models
