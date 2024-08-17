@@ -50,3 +50,8 @@ Implemented a REST API that accepts POST requests to launch applications.<br />
 Utilized 'child_process' to execute commands in the OS.<br />
 MongoDB Integration:
 Stored and retrieved application details using Mongoose models
+<br />
+Demo video by using postman to launch the app.
+```shell
+https://github.com/KIRUBAHARAN8878M/ezeeBE_Launcher/blob/main/Launchapppostman.mp4
+```
