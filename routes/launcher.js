@@ -1,6 +1,5 @@
 import express from 'express';
 import { exec } from 'child_process';
-import AppModel from '../models/AppModel.js';
 
 const router = express.Router();
 

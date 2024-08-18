@@ -1,0 +1,3 @@
+@echo off
+echo Starting the OpEzeeBE Launcher...
+node index.js
