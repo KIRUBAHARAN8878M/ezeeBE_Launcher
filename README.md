@@ -1,10 +1,9 @@
 
 Title: App Launcher<br />
-Description: A backend application designed to launch applications with specific parameters through a RESTful API. It is built using Node.js, Express.js, and MongoDB.<br />
+Description: A backend application designed to launch applications with specific parameters through a RESTful API. It is built using Node.js, Express.js.<br />
 Installation Instructions<br />
 > **Note**:Prerequisites:<br />
 Node.js and npm installed.<br />
-MongoDB server - a MongoDB Atlas account.<br />
 
 Backend Setup:<br />
 Clone the repository:
@@ -16,24 +15,33 @@ Install dependencies:
 ```shell
 npm install
 ```
-Configure MongoDB:
-Create a .env file in the root directory.
-Add your MongoDB URI:
-```shell
-CONNECTION_URL=mongodb+srv://<username>:<password>@cluster0.mongodb.net/yourdbname?retryWrites=true&w=majority
-```
-Start the backend server:
+Start the backend server by using terminal:
 ```shell
 node index.js
+```
+Start the backend server by uing '.bat' file:
+after npm install just Double click the '.bat' file automatically start the server.
+```shell
+start-server.bat
 ```
 
 API Endpoints:
 POST /launcher: Launches an application with the specified path and command.
-Body Parameters:
+Body Parameters: <br />
+Example 1 :  <br />
 ```shell
 {
   "appPath": "C:\\Program Files\\Google\\Chrome\\Application\\chrome.exe",
   "appcom": "google.com"
+}
+```
+
+Example 2 : <br />
+
+```shell
+{
+  "appPath": "C:\\Program Files\\Google\\Chrome\\Application\\chrome.exe",
+  "appcom": "youtube.com"
 }
 ```
 
@@ -45,15 +53,13 @@ http://localhost:5000/launcher.
 Use the POST method and the JSON body format as described above.<br />
 
 Features Implementation<br />
-Launcher API:
+Launcher API:<br />
 Implemented a REST API that accepts POST requests to launch applications.<br />
 Utilized 'child_process' to execute commands in the OS.<br />
-MongoDB Integration:
-Stored and retrieved application details using Mongoose models
+
 <br />
-<br />
-<br />
-Demo video by using postman to launch the app.
+Demo video by using postman to launch the app. <br />
+
 ```shell
 https://github.com/KIRUBAHARAN8878M/ezeeBE_Launcher/blob/main/Launchapppostman.mp4
 ```
